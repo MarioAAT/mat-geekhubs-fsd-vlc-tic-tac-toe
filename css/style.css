@@ -3,6 +3,7 @@ body{
     /* background-color: black; */
 }
 
+
 h1{
     font-size: 8vw;
     color: transparent;
@@ -13,8 +14,10 @@ h1{
 }
 
 .img-home{
-    height: 50vh;
+    height: 60vh;
     width: 30vw;
-    background-image: url(../images/unnamed.png);
+    background-image: url(../images/tic-tac-toe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
