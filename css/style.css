@@ -19,3 +19,8 @@ h1{
     background-repeat: no-repeat; */
 
 }
+
+.j-1{
+    border: solid 1px white;
+    border-radius: 5px;
+}
