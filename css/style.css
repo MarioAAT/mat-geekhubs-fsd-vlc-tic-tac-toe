@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 
 
@@ -14,10 +14,8 @@ h1{
 }
 
 .img-home{
-    height: 60vh;
-    width: 30vw;
-    background-image: url(../images/tic-tac-toe.png);
+    /* background-image: url(../images/tic-tac-toe.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
 }
