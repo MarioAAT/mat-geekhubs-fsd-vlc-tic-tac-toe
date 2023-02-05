@@ -57,3 +57,19 @@ h1{
     display: flex;
     justify-content: space-around;
 }
+
+.container-4{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.box-winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 70vw;
+    border: outset white;
+    border-radius: 45px;
+}
