@@ -24,3 +24,16 @@ h1{
     border: solid 1px white;
     border-radius: 5px;
 }
+
+.tictactoe{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: space-between; */
+    height: 50vh;
+    border: solid 1px white;
+}
+
+.box1{
+    height: 16vh;    
+    border: solid 1px white;
+}
