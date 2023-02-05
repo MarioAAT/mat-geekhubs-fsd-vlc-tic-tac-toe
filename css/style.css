@@ -28,12 +28,24 @@ h1{
 .tictactoe{
     display: flex;
     flex-flow: column wrap;
-    /* justify-content: space-between; */
+    justify-content: pace-around;
     height: 50vh;
-    border: solid 1px white;
+    margin-top: 4vh;
+    /* border: solid 1px white; */
 }
 
-.box1{
+.box{
     height: 16vh;    
-    border: solid 1px white;
+    
+}
+
+.b-1 , .b-2, .b-4, .b-5{
+    border-right: solid white;
+    border-bottom: solid white;
+}
+.b-3, .b-6{
+    border-right: solid white;
+}
+.b-7, .b-8{
+    border-bottom: solid white;
 }
