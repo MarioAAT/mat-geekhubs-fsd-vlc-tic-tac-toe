@@ -1,0 +1,9 @@
+.tictactoe{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: pace-around;
+    height: 50vh;
+    width: 60vw;
+    margin-top: 4vh;
+    margin-left: 80px;
+}

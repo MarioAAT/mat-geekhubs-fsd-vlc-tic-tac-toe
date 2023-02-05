@@ -13,15 +13,8 @@ h1{
     text-align: center;
 }
 
-.img-home{
-    /* background-image: url(../images/tic-tac-toe.png);
-    background-size: cover;
-    background-repeat: no-repeat; */
-
-}
-
 .player{
-    font-size: 4vw;
+    font-size: 3vw;
     color: transparent;
     background: radial-gradient(circle, rgba(182,181,198,1) 0%, rgba(148,148,214,1) 35%, rgba(0,212,255,1) 100%);
     background-clip: text;
@@ -42,7 +35,6 @@ h1{
     justify-content: pace-around;
     height: 50vh;
     margin-top: 4vh;
-    /* border: solid 1px white; */
 }
 
 .box{
@@ -59,4 +51,10 @@ h1{
 }
 .b-7, .b-8{
     border-bottom: solid white;
+}
+
+.cont-btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
 }
