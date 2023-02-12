@@ -38,8 +38,12 @@ h1{
 }
 
 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 16vh;    
-    
+    color: thistle;
+    font-size: xx-large;
 }
 
 .b-1 , .b-2, .b-4, .b-5{

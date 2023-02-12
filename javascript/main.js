@@ -11,7 +11,7 @@ const savePlayers = () => {
     sessionStorage.setItem("Name player 2", nomPlayer2);
 
     if(nomPlayer1 == "" || nomPlayer2 == "") {
-        alert("You must complete both names");
+        alert("No olvides completar los nombres");
     } else {
         document.getElementById("play").href="../pages/tictactoe.html";
     };
