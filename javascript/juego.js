@@ -18,49 +18,56 @@ let fichaP2 = 3;
 
 let miTablero = ["","","","","","","","",""];
 
-// let combinacionGanadora = [
-//     [0, 1, 2],
-//     [3, 4, 5],
-//     [6, 7, 8],
-//     [0, 3, 6],
-//     [1, 4, 7],
-//     [2, 5, 8],
-//     [0, 4, 8],
-//     [2, 4, 6],
-// ];
+let combinacionGanadora = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+];
 
-let combinacionesGanadoras = {
-    cg1 : [0, 1, 2],
-    cg2 : [3, 4, 5],
-    cg3 : [6, 7, 8],
-    cg4 : [0, 3, 6],
-    cg5 : [1, 4, 7],
-    cg6 : [2, 5, 8],
-    cg7 : [0, 1, 2],
-    cg8 : [0, 4, 8],
-    cg9 : [2, 4, 6]
-};
+// let combinacionesGanadoras = {
+//     cg1 : [0, 1, 2],
+//     cg2 : [3, 4, 5],
+//     cg3 : [6, 7, 8],
+//     cg4 : [0, 3, 6],
+//     cg5 : [1, 4, 7],
+//     cg6 : [2, 5, 8],
+//     cg7 : [0, 1, 2],
+//     cg8 : [0, 4, 8],
+//     cg9 : [2, 4, 6]
+// };
 
 const comprueboGanador = (numero) => {
+
+    if(miTablero[celda.id] = combinacionGanadora[0]){
+        console.log("X ha gando")
+    }
+    
     // let ganador = "winner" + numero;
 
     // let arrayJugadores = ["winner1", "winner2"];
 
     // arrayJugadores = arrayJugadores.filter(valor => !ganador.includes(valor));
 
-    // let tableroGanador = miTablero.find([combinacionGanadora[0]]);
+    // let tableroGanador = miTablero.find([combinacionesGanadoras[0]]);
 
     // console.log(tableroGanador);
 
-    let ganador = "";
+    // let ganador = "";
 
-    let posicionFichaP1 = document.getElementsByClassName(combinacionesGanadoras.cg1);
+    // let posicionFichaP1 = document.getElementsByClassName(combinacionesGanadoras.cg1);
 
-    console.log(posicionFichaP1);
+    // console.log(posicionFichaP1);
 
-    if(fichaP1 == 0 && posicionFichaP1 == "X") {
-        console.log("ha ganado X");
-    }
+    // if(fichaP1 == 0 && posicionFichaP1 == "X") {
+    //     console.log("ha ganado X");
+    // }
+
+
 };
 
 tablero.map(
