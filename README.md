@@ -1,2 +1,1 @@
-# mat-geekhubs-fsd-vlc-tic-tac-toe
-Clasico juego de Tic Tac Toe con JavaScript
+<h1>Tic Tac Toe</h1>

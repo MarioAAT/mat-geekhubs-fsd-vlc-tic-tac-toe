@@ -1,10 +1,10 @@
 
 
 let infoPlayer1 = document.getElementById("player1");
-infoPlayer1.innerHTML = sessionStorage.getItem("Name player 1");
+infoPlayer1.innerHTML = sessionStorage.getItem("Nombre player 1");
 
 let infoPlayer2 = document.getElementById("player2");
-infoPlayer2.innerHTML = sessionStorage.getItem("Name player 2");
+infoPlayer2.innerHTML = sessionStorage.getItem("Nombre player 2");
 
 
 
@@ -43,9 +43,9 @@ let combinacionGanadora = [
 
 const comprueboGanador = (numero) => {
 
-    if(miTablero[celda.id] = combinacionGanadora[0]){
-        console.log("X ha gando")
-    }
+    // if(miTablero[celda.id] = combinacionGanadora[0]){
+    //     console.log("X ha gando")
+    // }
     
     // let ganador = "winner" + numero;
 
