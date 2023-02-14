@@ -1,13 +1,8 @@
-
-
 let infoPlayer1 = document.getElementById("player1");
 infoPlayer1.innerHTML = sessionStorage.getItem("Nombre player 1");
 
 let infoPlayer2 = document.getElementById("player2");
 infoPlayer2.innerHTML = sessionStorage.getItem("Nombre player 2");
-
-
-
 
 let tablero = Array.from(document.getElementsByClassName("box"));
 
@@ -16,92 +11,88 @@ let turno = true;
 let fichaP1 = 3;
 let fichaP2 = 3;
 
-let miTablero = ["","","","","","","","",""];
+let miTablero = ["", "", "", "", "", "", "", "", ""];
 
 let combinacionGanadora = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6],
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
 ];
-
-// let combinacionesGanadoras = {
-//     cg1 : [0, 1, 2],
-//     cg2 : [3, 4, 5],
-//     cg3 : [6, 7, 8],
-//     cg4 : [0, 3, 6],
-//     cg5 : [1, 4, 7],
-//     cg6 : [2, 5, 8],
-//     cg7 : [0, 1, 2],
-//     cg8 : [0, 4, 8],
-//     cg9 : [2, 4, 6]
-// };
-
-const comprueboGanador = (numero) => {
-
-    // if(miTablero[celda.id] = combinacionGanadora[0]){
-    //     console.log("X ha gando")
-    // }
+let ganador;
+const comprueboGanador = () => {
+  if (miTablero[0] === miTablero[1] && miTablero[1] === miTablero[2] && miTablero[0] != "") {
     
-    // let ganador = "winner" + numero;
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
 
-    // let arrayJugadores = ["winner1", "winner2"];
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
+  if (miTablero[3] === miTablero[4] && miTablero[4] === miTablero[5] && miTablero[3] != ""){
 
-    // arrayJugadores = arrayJugadores.filter(valor => !ganador.includes(valor));
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
 
-    // let tableroGanador = miTablero.find([combinacionesGanadoras[0]]);
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
+  if (miTablero[6] === miTablero[7] && miTablero[7] === miTablero[8] && miTablero[6] != ""){
 
-    // console.log(tableroGanador);
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
 
-    // let ganador = "";
-
-    // let posicionFichaP1 = document.getElementsByClassName(combinacionesGanadoras.cg1);
-
-    // console.log(posicionFichaP1);
-
-    // if(fichaP1 == 0 && posicionFichaP1 == "X") {
-    //     console.log("ha ganado X");
-    // }
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
 
 
 };
 
-tablero.map(
-    (celda) => {
-        celda.addEventListener('click', ()=> {
+tablero.map((celda) => {
+  celda.addEventListener("click", () => {
+    if (celda.innerHTML === "" && (fichaP1 > 0 || fichaP2 > 0)) {
+      celda.innerHTML = turno == true ? "X" : "O";
 
-            //Ejemplo de como añadir una clase a un elemento seleccionado
-            // celda.classList.add('cellDesign2');
+      turno ? fichaP1-- : fichaP2--;
 
-            //Ejemplo de inyección de HTML desde JavaScript
-            // celda.innerHTML = `<p class='devil'>NUNCA LO ACABARAS</p>`;
+      miTablero[celda.id] = turno ? "X" : "O";
+      console.log(miTablero);
 
-            //Compruebo que SI puedo pintar la X o la O.
-            if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
+      comprueboGanador();
 
-                //Aqui PINTO el simbolo, dependiendo del turno
-                celda.innerHTML = (turno) ? "X" : "O";
-
-                //Después, dependiendo tambien de quien fuese el turno, le quito una ficha
-                //de las que puede poner
-                (turno) ? fichaP1-- : fichaP2--;
-
-
-                //Finalmente, además de que en pantalla quede marcada, guardo la posición 
-                //que ocupa en mi tablero lógico
-                miTablero[celda.id] = (turno) ? "X" : "O";
-
-                comprueboGanador();
-
-                //Cambiamos de turno
-                turno = !turno;
-
-            }
-        })
+      turno = !turno;
     }
-)
-
+  });
+});
