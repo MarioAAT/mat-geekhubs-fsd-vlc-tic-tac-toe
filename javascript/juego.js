@@ -28,9 +28,9 @@ const comprueboGanador = () => {
   if (miTablero[0] === miTablero[1] && miTablero[1] === miTablero[2] && miTablero[0] != "") {
     
     if(turno) {
-        console.log("Ha ganado el jugador 1")
+        // console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
+        // console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
@@ -76,6 +76,74 @@ const comprueboGanador = () => {
         window.location.href = "../pages/congrats.html"
     }
   }
+  if (miTablero[0] === miTablero[3] && miTablero[3] === miTablero[6] && miTablero[0] != ""){
+
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
+  if (miTablero[1] === miTablero[4] && miTablero[4] === miTablero[7] && miTablero[1] != ""){
+
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
+  if (miTablero[2] === miTablero[5] && miTablero[5] === miTablero[8] && miTablero[2] != ""){
+
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
+  if (miTablero[0] === miTablero[4] && miTablero[4] === miTablero[8] && miTablero[0] != ""){
+
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
 
 
 
@@ -89,7 +157,7 @@ tablero.map((celda) => {
       turno ? fichaP1-- : fichaP2--;
 
       miTablero[celda.id] = turno ? "X" : "O";
-      console.log(miTablero);
+    //   console.log(miTablero);
 
       comprueboGanador();
 
