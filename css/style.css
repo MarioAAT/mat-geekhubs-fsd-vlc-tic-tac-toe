@@ -32,7 +32,7 @@ h1{
 .tictactoe{
     display: flex;
     flex-flow: column wrap;
-    justify-content: pace-around;
+    /* justify-content: space-around; */
     height: 50vh;
     margin-top: 4vh;
 }
