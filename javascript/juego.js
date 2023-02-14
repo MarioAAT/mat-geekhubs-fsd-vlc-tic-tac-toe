@@ -1,8 +1,12 @@
+//INFORMACION DE JUGADORES 
+
 let infoPlayer1 = document.getElementById("player1");
 infoPlayer1.innerHTML = sessionStorage.getItem("Nombre player 1");
 
 let infoPlayer2 = document.getElementById("player2");
 infoPlayer2.innerHTML = sessionStorage.getItem("Nombre player 2");
+
+// VARIABLES 
 
 let tablero = Array.from(document.getElementsByClassName("box"));
 
@@ -24,20 +28,19 @@ let combinacionGanadora = [
   [2, 4, 6],
 ];
 let ganador;
+
+// FUNCION PARA COMPROBAR GANADOR
+
 const comprueboGanador = () => {
   if (miTablero[0] === miTablero[1] && miTablero[1] === miTablero[2] && miTablero[0] != "") {
     
     if(turno) {
-        // console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        // console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -45,16 +48,12 @@ const comprueboGanador = () => {
   if (miTablero[3] === miTablero[4] && miTablero[4] === miTablero[5] && miTablero[3] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -62,16 +61,12 @@ const comprueboGanador = () => {
   if (miTablero[6] === miTablero[7] && miTablero[7] === miTablero[8] && miTablero[6] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -79,16 +74,12 @@ const comprueboGanador = () => {
   if (miTablero[0] === miTablero[3] && miTablero[3] === miTablero[6] && miTablero[0] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -96,16 +87,12 @@ const comprueboGanador = () => {
   if (miTablero[1] === miTablero[4] && miTablero[4] === miTablero[7] && miTablero[1] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -113,16 +100,12 @@ const comprueboGanador = () => {
   if (miTablero[2] === miTablero[5] && miTablero[5] === miTablero[8] && miTablero[2] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -130,16 +113,12 @@ const comprueboGanador = () => {
   if (miTablero[0] === miTablero[4] && miTablero[4] === miTablero[8] && miTablero[0] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
@@ -147,24 +126,19 @@ const comprueboGanador = () => {
   if (miTablero[2] === miTablero[4] && miTablero[4] === miTablero[6] && miTablero[2] != ""){
 
     if(turno) {
-        console.log("Ha ganado el jugador 1")
         ganador = sessionStorage.getItem("Nombre player 1");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
 
     } else {
-        console.log("Ha ganado el jugador 2")
         ganador = sessionStorage.getItem("Nombre player 2");
-        console.log(ganador)
         sessionStorage.setItem("Ganador", ganador)
         window.location.href = "../pages/congrats.html"
     }
   }
-
-
-
 };
+
+// MAPEO DE TABLERO
 
 tablero.map((celda) => {
   celda.addEventListener("click", () => {
@@ -174,7 +148,6 @@ tablero.map((celda) => {
       turno ? fichaP1-- : fichaP2--;
 
       miTablero[celda.id] = turno ? "X" : "O";
-    //   console.log(miTablero);
 
       comprueboGanador();
 
