@@ -144,6 +144,23 @@ const comprueboGanador = () => {
         window.location.href = "../pages/congrats.html"
     }
   }
+  if (miTablero[2] === miTablero[4] && miTablero[4] === miTablero[6] && miTablero[2] != ""){
+
+    if(turno) {
+        console.log("Ha ganado el jugador 1")
+        ganador = sessionStorage.getItem("Nombre player 1");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+
+    } else {
+        console.log("Ha ganado el jugador 2")
+        ganador = sessionStorage.getItem("Nombre player 2");
+        console.log(ganador)
+        sessionStorage.setItem("Ganador", ganador)
+        window.location.href = "../pages/congrats.html"
+    }
+  }
 
 
 
