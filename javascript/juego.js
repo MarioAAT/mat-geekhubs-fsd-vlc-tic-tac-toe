@@ -78,6 +78,7 @@ const comprueboGanador = () => {
   }
 
 
+
 };
 
 tablero.map((celda) => {
@@ -96,3 +97,5 @@ tablero.map((celda) => {
     }
   });
 });
+
+
