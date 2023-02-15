@@ -32,7 +32,8 @@ h1{
 .tictactoe{
     display: flex;
     flex-flow: column wrap;
-    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* align-items: center; */
     height: 50vh;
     margin-top: 4vh;
 }
@@ -41,7 +42,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16vh;    
+    height: 16vh;
+    /* width: 20vw;     */
     color: thistle;
     font-size: x-large;
 }
@@ -78,5 +80,9 @@ h1{
     border: outset white;
     border-radius: 45px;
     box-shadow: 10px 10px 10px rebeccapurple ;
+}
+
+#play{
+    transition: all 0,1s;
 }
 
