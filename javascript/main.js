@@ -14,7 +14,7 @@ const savePlayers = () => {
     sessionStorage.setItem("Nombre player 2", nomPlayer2);
 
     const displace = () => {
-        this.style.marginleft == "40px" ? this.style.marginleft == "0px" : this.style.marginright == "40px"; 
+        this.style.marginleft == "40px" ? this.style.marginleft == "0px" : this.style.marginleft == "40px"; 
         }
         document.getElementById("play").addEventListener("mouseover", displace);
 
