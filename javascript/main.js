@@ -19,13 +19,19 @@ const savePlayers = () => {
         document.getElementById("play").addEventListener("mouseover", displace);
 
     if(nomPlayer1 == "" || nomPlayer2 == "") {
-        
-        
-    displace()
-                
+
+        displace ()
+        /*const displace = () => {
+            this.style.marginleft == "40px" ? this.style.marginleft == "0px" : this.style.marginright == "40px"; 
+            }
+            document.getElementById("play").addEventListener("mouseover", displace);*/
     // alert("No olvides poner tu nombre");
+
     } else {
-        document.getElementById("play").href="../pages/tictactoe.html";
+        
+        window.location.href = "../pages/tictactoe.html"
+        
+        // document.getElementById("play").href="../pages/tictactoe.html";
     }
 }
     
