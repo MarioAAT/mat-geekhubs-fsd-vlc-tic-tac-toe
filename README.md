@@ -57,3 +57,5 @@ En este proyecto hemos replicado el famoso juego TIC TAC TOE. La interfaz se ha 
 
  En el siguiente enlace podremos visualizar los avances del juego. Tambien se puede acceder a travez del repositorio de GitHub, ademas ahi tambien podemos acceder al codigo.
  
+ https://marioaat.github.io/mat-geekhubs-fsd-vlc-tic-tac-toe/ 
+ 
