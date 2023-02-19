@@ -29,6 +29,10 @@ let combinacionGanadora = [
 ];
 let ganador;
 
+
+
+
+
 // FUNCION PARA COMPROBAR GANADOR
 
 const comprueboGanador = () => {
@@ -153,7 +157,15 @@ tablero.map((celda) => {
 
       turno = !turno;
     }
+    
+    if(fichaP1 == 0 && fichaP2 == 0){
+        alert("Empate")
+    }
+        
+    
   });
 });
+
+
 
 
