@@ -27,10 +27,9 @@ let combinacionGanadora = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
+
 let ganador;
-
-
-
 
 
 // FUNCION PARA COMPROBAR GANADOR
