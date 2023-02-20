@@ -158,7 +158,7 @@ tablero.map((celda) => {
     }
     
     if(fichaP1 == 0 && fichaP2 == 0){
-        alert("Empate")
+        alert("Empate, reinicia el juego.")
     }
         
     

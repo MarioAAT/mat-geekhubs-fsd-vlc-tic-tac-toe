@@ -25,7 +25,6 @@ h1{
     -webkit-background-clip: text;
     border:  1px white;
     border-radius: 5px;
-    /* text-decoration: underline red; */
 }
 
 
@@ -41,7 +40,6 @@ h1{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    /* align-items: center; */
     height: 50vh;
     margin-top: 4vh;
 }
@@ -63,7 +61,6 @@ h1{
     justify-content: center;
     align-items: center;
     height: 16vh;
-    /* width: 18vw;     */
     color: thistle;
     font-size: x-large;
 }
@@ -102,8 +99,5 @@ h1{
     box-shadow: 10px 10px 10px rebeccapurple ;
 }
 
-#play{
-    /* position: absolute;  */
-    transition: all 0,1s;
-}
+
 
