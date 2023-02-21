@@ -155,12 +155,7 @@ tablero.map((celda) => {
       comprueboGanador();
 
       turno = !turno;
-    }
-    
-    if(fichaP1 == 0 && fichaP2 == 0){
-        alert("Empate, reinicia el juego.")
-    }
-        
+    }        
     
   });
 });
